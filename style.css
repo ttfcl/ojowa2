@@ -57,13 +57,22 @@ nav {
 .nav1Call {
     margin-top: auto;
     margin-bottom: auto;
+    display: flex;
     font-size: 18px;
     font-weight: 700;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .nav1Call > a { 
     color: black;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.nav1Call > div {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 .nav1Call > a:hover { 
     color: red;
@@ -104,7 +113,7 @@ nav {
     position: relative;
     height: fit-content;
     margin-top: auto;
-    margin-bottom: auto;
+
 }
 .test {
     position: absolute;

@@ -5,9 +5,9 @@ let displayNameOn = document.querySelector("#displayName")
 
 
 let change = () => {
-  if(localStorage.getItem("userDisplayName") !== null) {
+  if(localStorage.getItem("userDisplayName2") !== null) {
     display2.classList.add("hide") 
-    displayNameOn.textContent = localStorage.getItem("userDisplayName")
+    displayNameOn.textContent = localStorage.getItem("userDisplayName2")
     display1.classList.remove("hide")    
   }
 }
@@ -18,8 +18,8 @@ let change2 = () => {
 }
 logout.onclick = function() {
   firebase.auth().signOut().then(()=>{
-    localStorage.removeItem("userEmail")
-    localStorage.removeItem("userDisplayName")
+    localStorage.removeItem("userEmail2")
+    localStorage.removeItem("userDisplayName2")
     change2()
     alert("로그아웃 되었습니다.")
   })

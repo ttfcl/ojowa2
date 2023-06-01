@@ -96,7 +96,7 @@ let test3 = () => {
     'displayName' : name2,
     'email' : email2,
     'password' : password2 ,
-    'grade' : '1'
+    'grade' : '0'
   }
   console.log(save)
   db.collection('user').doc(String(directer)).set(save) 

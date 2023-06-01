@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오조와 트렌스젠더 출장마사지</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오조와 트렌스젠더 출장마사지</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="sigh.css">
+  <link rel="stylesheet" href="point.css">
   <meta name="description" property="og:description" content="업계 1위 트젠 쉬멜 시디 관리사 대기 중 오조와트젠마사지를 이용해보세요.">
   <meta property="og:image" content="mast.png">
   <meta property="og:title" content="트젠 쉬멜 시디 퍼스트클래스 출장마사지"> 
@@ -14,13 +14,20 @@
   <link rel="shortcut icon" href="icon.png">
   <meta name="keywords" content="트젠, 쉬멜, 시디, 마사지, 출장마사지, 오일마사지, 아로마마사지, 시흥출장마사지, 서울출장마사지, 인천출장마사지, 안산출장마사지, 섹시출장마사지, 스웨디시, 건식마사지, 스포츠마사지">
   <meta name="google-site-verification" content="KcoflToXmlqGwDCPx8zlbN8SjcLYFI7gj_XASyvmfic" />
+  <meta name="naver-site-verification" content="f62d77fba4cf11c7549920545352f94db750f5d3" />
 </head>
 <body>
   <nav>
     <div class="nav2">
-      <div class=" hide display1">
-        <a><span id="displayName">dasds</span>님 </a>  
+      <div class="hide display1">
+        <a><span id="displayName">dasds</span>님  포인트 <span id="point"></span>점</a>  
         <a class="">
+          <button class="nav_top_bar_button nav_top_bar_button3">
+            포인트조회
+          </button>
+          <button class="nav_top_bar_button nav_top_bar_button2">
+            충전하기
+          </button>
           <button class="nav_top_bar_button nav_top_button logout">
             로그아웃 
           </button>
@@ -81,37 +88,62 @@
       </div>
     </div>
   </nav>
-
-  
-
-	<section class="sigh_box">
-    <div class="box">
-      <img src="image/logo.png" width="200">
-      <p>이름을 입력해주세요</p>
-      <input type="text" placeholder="이름" id="name">
-      <p>이메일을 입력해주세요</p>
-      <input type="email" placeholder="E-Mail" id="email">
-      <p>비밀번호를 입력해주세요(6자 이상)</p>
-      <input type="password" placeholder="비밀번호" id="password">
-      <p>비밀번호를 다시 한 번 입력해주세요</p>
-      <input type="password" placeholder="비밀번호 재입력" id="rePassword">
-      <button id="sighUp">가입완료</button>
-	  <button id="sighUp2" class="hide">잠시만 기다려주세요.</button>
-    </div>
+  <section>
+    <div class="">입금계좌 : <span id="bank"></span> <span id="account"></span></div>
+    <div class="">보유 포인트 : <span id="point2"></span></div>
+    <form class="gform" action="https://script.google.com/macros/s/AKfycbzEOkETHuiA2DzWJrO_TQE0REAMja4PJaqlvOWh-maNFMwLaEHZafnbaYWNyX3-xGO9/exec" method="POST" data-email="tt9878439@gmail.com">
+      <fieldset>
+        <div class="box-input section3RightBoxContent" style="height: 10px;">
+          <input type="text" id="userEmail" name="이메일" placeholder="이메일" required hidden>
+        </div>
+        <div class="box-input section3RightBoxContent">
+          <p>입금자명</p>
+          <input type="text" id="" name="입금자명" placeholder="입금자명을 입력해주세요." required>
+        </div>
+        <div class="box-input section3RightBoxContent">
+          <p>충전금액</p>
+          <input type="number" id="howPoint" name="충전금액" placeholder="숫자만 입력해주세요" required value="0">
+        </div>
+        <div class="buttonBox">
+          <div id="b1000">+1000</div>
+          <div id="b5000">+5000</div>
+          <div id="b10000">+10000</div>
+          <div id="b50000">+50000</div>
+          <div id="b100000">+100000</div>
+          <div id="breset">초기화</div>
+        </div>
+        <div class="box-input">
+          <button type="submit" class="btn-send 전송버튼">신청하기</button>
+        </div>
+        <div style="display:none" class="thankyou_message">
+          <!-- You can customize the thankyou message by editing the code below -->
+          <p style="font-size: 18px; text-align: center;">신청해주셔서 감사합니다. 충전금액을 꼭 위 계좌에 입금해주세요.</p>
+          </h2>
+         </div>
+      </fieldset>
+    </form>
   </section>
-  
- 
-
+  <div class="backlink" style="color: transparent; background-color: transparent;">
+    <a href="https://skymsg.kro.kr/" title="하늘출장마사지">하늘출장마사지</a>
+    <a href="https://nuru12.kro.kr/" title="누루출장마사지">누루출장마사지</a>
+    <a href="https://ojowa.kro.kr/" title="오조와출장마사지">오조와출장마사지</a>
+    <a href="https://navi12.kro.kr/" title="나비출장마사지">나비출장마사지</a>
+    <a href="https://hongkong1.kro.kr/" title="홍콩출장마사지">홍콩출장마사지</a>
+    <a href="https://firstclass12.com/" title="퍼스트클래스">홍콩출장마사지</a>
+    <a href="https://ojowa.net/" title="오조와트젠마사지">오조와트젠마사지</a>
+  </div>
+  <footer> 
+    All copyright has been @ojowa.com
+  </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  <script src="nav.js"></script>
   <script src="login2.js"></script>
+  <script src="point.js"></script>
+  <script src="nav.js"></script>
   <script src="point2.js"></script>
-  <script src="sigh.js"></script>
+  <script src="form-submission-handler.js"></script>
 </body>
 </html>

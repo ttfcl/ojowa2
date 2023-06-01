@@ -1,8 +1,6 @@
-let abc, defg, hijk, lmop
+let abc, defg, hijk, lmop, qres
 
 master = () => { 
-    const bank = document.querySelector("#bank")
-    bank.textContent = hijk
     const gesipanR = document.querySelectorAll('.katalkLink')
     console.log(abc)
     for(let a of gesipanR) {
@@ -13,8 +11,8 @@ master = () => {
     for(let a of gesipanD) {
         a.href = defg
     }
-    const account = document.querySelector("#account")
-    account.textContent = lmop
+    // const account = document.querySelector("#account")
+    // account.textContent = lmop
 
 }
 
@@ -30,10 +28,10 @@ var firebaseConfig = {
     firebase.initializeApp(firebaseConfig);
   
   const db = firebase.firestore();
-  db.collection('product').doc('ojowa2bank').get().then((결과)=>{
-    hijk = 결과.data().bank
-    lmop = 결과.data().account
-  })  
+  // db.collection('product').doc('ojowa2bank').get().then((결과)=>{
+  //   hijk = 결과.data().bank
+  //   lmop = 결과.data().account
+  // })  
   db.collection('product').doc('ojowa2').get().then((결과)=>{
     abc = 결과.data().kt
       console.log(abc)
@@ -45,4 +43,3 @@ var firebaseConfig = {
     master()
   })
   
-

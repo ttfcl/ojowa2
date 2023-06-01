@@ -1,0 +1,60 @@
+section {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    font-size: 18px;
+    height: 100vh;
+}
+
+section > div {
+    width: 100%;
+    text-align: center;
+}
+.box-input {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.box-input  > p {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+}
+input {
+    width: 100%;
+    margin-left: 20px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.전송버튼 {
+    width: 100%;
+    font-size: 18px;
+}
+.전송버튼:hover {
+    background-color: antiquewhite;
+}
+.buttonBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.buttonBox > div {
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(162, 197, 197);
+}
+.buttonBox > div:hover {
+    background-color: rgb(77, 201, 160);
+}

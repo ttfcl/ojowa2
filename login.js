@@ -13,12 +13,13 @@ var firebaseConfig = {
       appId: "1:324139020031:web:c06cd9ebc043514658e6ca"
 };
 firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
 let registerButton = document.querySelector("#register")
 let email = document.querySelector("#email")
 let password = document.querySelector("#password")
 let masterkey = 0;
-
+let tyui
 
 let loginF = () => {
   if(localStorage.getItem("userEmail")) {
@@ -42,10 +43,16 @@ let loginF = () => {
           }else {
             firebase.auth().signInWithEmailAndPassword(email.value, password.value).then((result)=> {
               localStorage.setItem("userEmail2" , email.value)
-              localStorage.setItem("userDisplayName2" , result.user.displayName)
-              masterkey = 1;
-              alert("성공적으로 로그인 되었습니다.")
-              location.href = "./index.html";
+              db.collection('user').doc(email.value).get().then((결과)=>{
+                tyui = 결과.data().grade
+                console.log(tyui)
+                localStorage.setItem("userPoint2", tyui)
+                localStorage.setItem("userDisplayName2" , result.user.displayName)
+                masterkey = 1;
+              }).then(() => {
+                alert("성공적으로 로그인 되었습니다.")
+                location.href = "./index.html";
+              })
             }).catch((result) => {
               if(masterkey === 0) {
               alert('이메일이 존재하지 않거나 비밀번호가 일치하지 않습니다.')

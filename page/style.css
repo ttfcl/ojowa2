@@ -234,6 +234,13 @@ footer {
 }
 
 /*bodySection*/
+body {
+    background-image: url(image/test1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 .bodySection {
     padding-top: 50px;
     padding-bottom: 50px;

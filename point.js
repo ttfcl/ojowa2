@@ -1,9 +1,9 @@
 let abc, defg, hijk, lmop, qres,tuv
-let b1000 = document.querySelector("#b1000")
-let b5000 = document.querySelector("#b5000")
 let b10000 = document.querySelector("#b10000")
 let b50000 = document.querySelector("#b50000")
 let b100000 = document.querySelector("#b100000")
+let b300000 = document.querySelector("#b300000")
+let b500000 = document.querySelector("#b500000")
 let breset = document.querySelector("#breset")
 let howPoint = document.querySelector("#howPoint")
 let userEmail = document.querySelector("#userEmail")
@@ -22,7 +22,7 @@ master = () => {
     const bank = document.querySelector("#bank")
     bank.textContent = hijk
     const point2 = document.querySelector("#point2")
-    point2.textContent = tuv
+    point2.textContent = Number(tuv).toLocaleString()
     userEmail.value = localStorage.getItem('userEmail2')
 }
 
@@ -55,12 +55,6 @@ var firebaseConfig = {
     master()
   })
   
-b1000.onclick = () => {
-  howPoint.value = Number(howPoint.value) + 1000
-}
-b5000.onclick = () => {
-  howPoint.value = Number(howPoint.value) + 5000 
-}
 b10000.onclick = () => {
   howPoint.value = Number(howPoint.value) + 10000
 }
@@ -68,7 +62,13 @@ b50000.onclick = () => {
   howPoint.value = Number(howPoint.value) + 50000
 }
 b100000.onclick = () => {
-  howPoint.value = Number(howPoint.value) + 100000 
+  howPoint.value = Number(howPoint.value) + 100000
+}
+b300000.onclick = () => {
+  howPoint.value = Number(howPoint.value) + 300000
+}
+b500000.onclick = () => {
+  howPoint.value = Number(howPoint.value) + 500000 
 }
 breset.onclick = () => {
   howPoint.value = 0 

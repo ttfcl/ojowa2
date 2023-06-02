@@ -17,7 +17,7 @@ let pointFind = document.querySelector(".nav_top_bar_button3")
   pointFind.onclick = () => {
     db.collection('user').doc(localStorage.getItem("userEmail2")).get().then((결과)=>{
         let fgh 
-        fgh = 결과.data().grade
+        fgh = Number(결과.data().grade).toLocaleString()
         localStorage.setItem("userPoint2", fgh)
         console.log(1)
         document.querySelector("#point").textContent = fgh

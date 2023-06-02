@@ -44,7 +44,7 @@ let loginF = () => {
             firebase.auth().signInWithEmailAndPassword(email.value, password.value).then((result)=> {
               localStorage.setItem("userEmail2" , email.value)
               db.collection('user').doc(email.value).get().then((결과)=>{
-                tyui = 결과.data().grade
+                tyui = Number(결과.data().grade).toLocaleString()
                 console.log(tyui)
                 localStorage.setItem("userPoint2", tyui)
                 localStorage.setItem("userDisplayName2" , result.user.displayName)

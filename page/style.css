@@ -33,7 +33,8 @@ a {
 nav {
     width: 100%;
     border-bottom: 2px solid gray;
-    background-color: #fdfde3;
+    background-color: #000000;
+    padding-bottom: 20px;
 }
 .nav1 {
     width: 60%;
@@ -42,10 +43,12 @@ nav {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    color:white;
 }
 .nav1Title {
-    font-size: 48px;
-    color: red;
+    font-size: 20px;
+    color: rgb(255,136,80);
+    font-weight: 700;
 }
 .nav1Call {
     margin-top: auto;
@@ -57,7 +60,7 @@ nav {
     justify-content: space-around;
 }
 .nav1Call > a { 
-    color: black;
+    color: white;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
@@ -186,6 +189,7 @@ nav {
     background-color: transparent;
     padding-left: 5px;
     padding-right: 5px;
+    color: white;
 }
 .nav_top_bar_button:hover {
     background-color: black;

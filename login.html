@@ -38,11 +38,11 @@
             로그인 
           </button>
         </a>  
-        <a href="sigh.html" class="nav_top_button">
+        <!-- <a href="sigh.html" class="nav_top_button">
           <button class="nav_top_bar_button">
             회원가입
           </button>
-        </a>
+        </a> -->
       </div> 
     </div>
     <div class="nav1">
@@ -69,7 +69,6 @@
           </div>
         </div>
         <a href="" class="katalkLink" target="_blank">카톡문의</a>
-        <a href="" class="teleLink" target="_blank">텔레그램</a>
       </div>
     </div>
   </nav>
@@ -81,6 +80,7 @@
       <p>비밀번호를 입력해주세요</p>
       <input type="password" placeholder="비밀번호" id="password">
       <button id="register" style="width: 100%; height: 50px;">로그인</button>
+      
     </div>
   </section>
   
@@ -125,5 +125,9 @@
 			return false;
 		}
 	}	
+  if(localStorage.getItem("alret") === "alret") {
+    alert("프로필 및 서비스 확인을 원하시면 카카오톡으로 문의주세요.")
+    localStorage.clear()
+  }
 </script>
 </html>

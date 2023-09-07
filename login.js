@@ -1,7 +1,4 @@
-if(localStorage.getItem("userEmail")) {
-  location.href = 'index.html'
-}
-
+localStorage.clear()
 
 
 var firebaseConfig = {

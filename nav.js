@@ -6,9 +6,9 @@ let nav_top_bar_button2 = document.querySelector(".nav_top_bar_button2")
 let count = 0
 let count2 = 0
 
-nav_top_bar_button2.onclick = () => {
-    location.href = "https://ojowa.net/point.html"
-}
+// nav_top_bar_button2.onclick = () => {
+//     location.href = "https://ojowa.net/point.html"
+// }
 
 away.onclick = () => {
     if(count === 0) {
